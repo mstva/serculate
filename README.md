@@ -1,15 +1,29 @@
-# Welcome to your CDK TypeScript project
+### Soundwav Backend API
+A serverless API using AWS CDK, Lambda, API Gateway and DynamoDB.
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`SoundwavApiStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+#### Useful links:
+- [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home)
+- [AWS Lambda Console](https://console.aws.amazon.com/lambda/home#/functions)
+- [AWS ApiGateway Console](https://console.aws.amazon.com/apigateway/home)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+#### Instructions:
 
-## Useful commands
+```shell
+# Synthesize a template from your app
+cdk synth
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+# Bootstrapping an environment
+cdk bootstrap
+
+# Compare deployed stack with current state
+cdk diff
+
+# Deployment to your AWS account/region
+cdk deploy --all
+
+# Local development
+cdk synth && sam local start-api -t ./cdk.out/CrewtechApi.template.json
+
+# Destroy all services and stacks
+cdk destroy --all
+```
