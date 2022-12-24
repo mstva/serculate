@@ -3,7 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import {Stack, StackProps} from "aws-cdk-lib";
 import {Construct} from "constructs";
 
-export class SoundwavApiStack extends Stack {
+export class SerculateStack extends Stack {
 
     constructor(scope: Construct, id: string, props?: StackProps) {
         super(scope, id, props);
@@ -12,5 +12,5 @@ export class SoundwavApiStack extends Stack {
 }
 
 const app = new cdk.App();
-new SoundwavApiStack(app, 'SoundwavApiStack');
+new SerculateStack(app, 'SerculateStack');
 app.synth()

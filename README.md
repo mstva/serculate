@@ -1,5 +1,5 @@
 ### Soundwav Backend API
-A serverless API using AWS CDK, Lambda, API Gateway and DynamoDB.
+A serverless API using TypeScript, AWS CDK, Lambda, API Gateway and DynamoDB.
 
 #### Useful links:
 - [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home)
@@ -22,7 +22,7 @@ cdk diff
 cdk deploy --all
 
 # Local development
-cdk synth && sam local start-api -t ./cdk.out/CrewtechApi.template.json
+cdk synth && sam local start-api -t ./cdk.out/Serculate.template.json
 
 # Destroy all services and stacks
 cdk destroy --all
