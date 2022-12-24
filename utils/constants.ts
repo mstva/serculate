@@ -1,5 +1,5 @@
 
-export const app_name = "soundwav_api"
+export const app_name = "serculate"
 
 export const HTTP_METHOD = {
     GET: "GET",

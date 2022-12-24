@@ -1,4 +1,4 @@
-### Soundwav Backend API
+### Serculate Backend API
 A serverless API using TypeScript, AWS CDK, Lambda, API Gateway and DynamoDB.
 
 #### Useful links:

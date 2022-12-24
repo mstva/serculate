@@ -1,8 +1,8 @@
 {
-  "name": "soundwav_api",
+  "name": "serculate",
   "version": "0.1.0",
   "bin": {
-    "soundwav_api": "bin/soundwav_api.js"
+    "serculate": "bin/serculate.js"
   },
   "scripts": {
     "build": "tsc",
